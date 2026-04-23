@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="nl">
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Ceevee 2.0</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Curriculum Vitae Frank Vande Vannet</title>
+    <meta name="description" content="Resume, Curriculum Vitae of Frank Vande Vannet, an IT engineer in Belgium.">
+    <meta name="author" content="Frank Vande Vannet">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -21,14 +21,15 @@
     <!-- script
     ================================================== -->
     <script defer src="js/vendor/fontawesome/all.min.js"></script>
+     <!-- QR library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="js/skills.js"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+    <link rel="icon" type="image/png" href="images/own/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/own/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/own/favicon-16x16.png">
 </head>
 
 <body id="top" class="ss-preload">
@@ -40,7 +41,6 @@
         <div id="loader"></div>
     </div>
 
-
     <!-- header
     ================================================== -->
     <header class="s-header">
@@ -50,9 +50,10 @@
                     <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
                     <li><a class="smoothscroll" href="#about">About</a></li>
                     <li><a class="smoothscroll" href="#resume">Resume</a></li>
-                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-                    <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+                    
                     <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
+                    <li><a href="https://github.com/frankvandevannetlabs"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/frankvvf/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                 </ul>
             </nav>
         </div> <!-- end row -->
@@ -61,7 +62,6 @@
             <span class="s-header__menu-icon"></span>
         </a>
     </header> <!-- end s-header -->
-
 
     <!-- hero
     ================================================== -->
@@ -74,32 +74,27 @@
 
                 <div class="s-hero__content-about">
 
-                    <h1>I'm Jonathan Doe.</h1>
+                    <h1>Ik ben Frank <br> Vande Vannet.</h1>
 
                     <h3>
-                    I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
-                    effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                    IT Support Engineer met een passie voor technologie en mensen.<br>
+                    Ik combineer een analytisch denkvermogen met empathie om gebruikers écht verder te helpen.
+                    Gedreven om door te groeien naar System, Network en Cloud Engineering of een gecombineerde infrastructuurrol.
+                    <br><br>
+                    Let's <a class="smoothscroll" href="#about">start scrolling</a>
                     and learn more <a class="smoothscroll" href="#about">about me</a>.
                     </h3>
-
-                    <div class="s-hero__content-social">
-                        <a href="#0"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    </div>
+                    
 
                 </div> <!-- end s-hero__content-about -->
-
+                    <div class="s-hero__content-social"></div>
             </div>
         </div> <!-- s-hero__content -->
 
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
                 <span class="scroll-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
                 </span>
                 <span class="scroll-text">Scroll Down</span>
             </a>
@@ -107,52 +102,72 @@
 
     </section> <!-- end s-hero -->
 
-
     <!-- about
     ================================================== -->
     <section id="about" class="s-about target-section">
 
         <div class="row">
             <div class="column large-3 tab-12">
-                <img class="s-about__pic" src="images/avatars/user-06.jpg" alt="">
+                <img class="s-about__pic" src="images/own/OwnAvatar.jpg" alt="Frank Vande Vannet">
             </div>
             <div class="column large-9 tab-12 s-about__content">
                 <h3>About Me</h3>
                 <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-                quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore 
-                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
-                nostrum exercitationem ullam corporis suscipit laboriosam.
+                Ik ben een IT Support Engineer met meerdere jaren ervaring in 2nd en 3rd line support, waarbij ik sterk inzet op End User Support. 
+                <br>Voor mij draait IT niet alleen om technologie, maar ook om mensen. Ik luister, analyseer en zoek naar oplossingen die écht werken voor de gebruiker.
+                <br><br>Met een analytisch brein ga ik graag tot de kern van technische problemen, om niet alleen snel op te lossen maar ook structureel te verbeteren. 
+                <br><br>Naast mijn werk investeer ik actief in mijn groei richting systemen, netwerken en cloud. Via opleidingen en mijn eigen homelab blijf ik mijn kennis 
+                uitbreiden en nieuwe technologieën praktisch toepassen.
+                <br><br>Mijn ambitie is om door te groeien naar een rol als System, Network of Cloud Engineer, of een gecombineerde infrastructuurrol waarin techniek 
+                en gebruikservaring samenkomen.
                 </p>
 
                 <hr>
 
-                <div class="row s-about__content-bottom">
-                    <div class="column w-1000-stack">
-                        <h3>Contact Details</h3>
-    
-                        <p>
-                        Jonathan Doe <br>
-                        1600 Amphitheatre Parkway <br>
-                        Mountain View, CA 94043 US <br>
-                        <a href="tel:+1975432345">+197 543 2345</a> <br>
-                        <a href="mailto:#0">sayhello@ceevee.com</a>
-                        </p>
-                        
-                    </div>
-                    <div class="column w-1000-stack">
-                        <a href="#0" class="btn btn--download">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
-                            Download CV
-                        </a>
-                    </div>
-                </div>
+                <div class="about-contact">
+
+    <!-- QR CODE (vCard) -->
+    <div class="about-contact__qr">
+        <div id="qrcode-vcard"></div>
+        <script>
+            // generate vCard QR code
+            new QRCode(document.getElementById("qrcode-vcard"), {
+                text: `BEGIN:VCARD
+VERSION:3.0
+N:Vande Vannet;Frank;;;
+FN:Frank Vande Vannet
+TEL;TYPE=cell:+32475845915
+EMAIL:frank.vandevannet@gmail.com
+ADR;TYPE=home,work:;;Oudenaardestraat 39;Vichte (Anzegem);Belgie;8570;
+URL:https://www.yourwebsite.com
+END:VCARD`,
+                width: 180,
+                height: 180,
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        </script>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="about-contact__info">
+        <h3>Contact Details</h3>
+
+        <p>
+            Frank Vande Vannet<br>
+            Oudenaardestraat 39<br>
+            8570 Vichte (Anzegem), België<br>
+            <a href="tel:+32475845915">+32 475 84 59 15</a><br>
+            <a href="mailto:frank.vandevannet@gmail.com">frank.vandevannet@gmail.com</a>
+        </p>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="about-contact__actions">
+        <a href="download/CV Frank Vande Vannet 03-2026-NL.pdf" class="btn btn--primary">Download Resume</a>
+        <a href="download/Frank_Vande_Vannet.vcf" class="btn btn--primary">Download Contact</a>
+    </div>
+
+</div>
             </div>
         </div> <!-- end row -->
 
@@ -163,152 +178,522 @@
     ================================================== -->
     <section id="resume" class="s-resume target-section">
         
+       
         <div class="row s-resume__section">
             <div class="column large-3 tab-12">
                 <h3 class="section-header-allcaps">Career</h3>
             </div>
             <div class="column large-9 tab-12">
                 <div class="resume-block">
-
                     <div class="resume-block__header">
-                        <h4 class="h3">Dropbox</h4>
+                        <h4 class="h3">IT Engineer | 360 IT</h4>
                         <p class="resume-block__header-meta">
-                            <span>Product Designer</span> 
+                            <span>Junior System Engineer</span> 
                             <span class="resume-block__header-date">
-                                August 2019 - Present
+                                August 2025 - April 2026
                             </span>
                         </p>
                     </div>
-
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
-                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
-                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
-                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
-                    </p>
-
+                    <ul>
+                        <li>Pre Staging Dell Servers, Cisco Meraki Switches</li>
+                        <li>Beheer O365 en On-Prem
+                            <ul>
+                                <li>Groups, Users, mail,etc…</li>
+                            </ul>
+                        </li>
+                        <li>Onderhoud (Checks active netwerken)
+                            <ul>
+                                <li>Check Event viewer</li>
+                                <li>Check updates</li>
+                                <li>Check barracuda firewall</li>
+                                <li>Onderhoud checks in O365
+                                    <ul>
+                                        <li>Security settings, wachtwoorden</li>
+                                        <li>Check security & compliance</li>
+                                        <li>Check Exchange Online</li>
+                                    </ul>
+                                </li>
+                                <li>Checklist afwerken…</li>
+                            </ul>
+                        </li>
+                        <li>Cnames toevoegen aan domains</li>
+                        <li>Monitoring Tool: Zabbix</li>
+                        <li>Phishing mails nazicht verzonden via Phished.io</li>
+                        <li>Aanmaken VM’s in Hyper-V</li>
+                        <li>Pc’s toevoegen aan Intune</li>
+                        <li>Tickets aanmaken en opvolgen in OTRS</li>
+                    </ul>
                 </div> <!-- end resume-block -->
-
                 <div class="resume-block">
-
                     <div class="resume-block__header">
-                        <h4 class="h3">Facebook</h4>
+                        <h4 class="h3">IT Consultant | Econocom</h4>
                         <p class="resume-block__header-meta">
-                            <span>UI/UX Designer</span> 
+                            <span>Backfill Support Engineer (Remote and On-site)</span> 
                             <span class="resume-block__header-date">
-                                August 2016 - July 2019
+                                August 2020 - August 2025
                             </span>
                         </p>
                     </div>
-
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
-                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
-                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
-                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
-                    </p>
-
+                    <ul>
+                        <li>Remote oplossen van computerproblemen bij gebruikers</li>
+                        <li>Opmaken van IT-Service tickets in snow, Jira, Top desk, ed.…</li>
+                        <li>AD aanpassingen: user problemen, users aanmaken.</li>                       
+                        <li>Beheer van O365</li>
+                        <li>Leveranciers aanspreken voor gebruiker problemen op te lossen
+                        <li>Hardware en softwareproblemen verhelpen on-site.</li>
+                        <li>Netwerkproblemen verhelpen</li>
+                        <li>Staging van Pc’s, Gsm’s, printers</li>
+                        <li>Migratie Win 7 naar Win 10</li>
+                        <li>Migratie Win 10 naar Win 11</li>
+                    </ul>
                 </div> <!-- end resume-block -->
-            </div>
-        </div> <!-- s-resume__section -->
-
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Education</h3>
-            </div>
-            <div class="column large-9 tab-12">
                 <div class="resume-block">
-
                     <div class="resume-block__header">
-                        <h4 class="h3">University of Life</h4>
+                        <h4 class="h3">IT Consultant | Centric</h4>
                         <p class="resume-block__header-meta">
-                            <span>Master in Graphic Design</span> 
+                            <span>Support Engineer</span> 
                             <span class="resume-block__header-date">
-                                April 2015
+                                Februari 2019 - mei 2020
                             </span>
                         </p>
                     </div>
-
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
-                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
-                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
-                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
-                    </p>
-
-                </div> <!-- end resume-block -->
-
-                <div class="resume-block">
-
-                    <div class="resume-block__header">
-                        <h4 class="h3">School of Cool Designers</h4>
-                        <p class="resume-block__header-meta">
-                            <span>B.A. Degree in Graphic Design</span> 
-                            <span class="resume-block__header-date">
-                                August 2012
-                            </span>
-                        </p>
-                    </div>
-
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
-                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
-                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
-                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
-                    </p>
-
-                </div> <!-- end resume-block -->
-            </div>
-        </div> <!-- s-resume__section -->
-
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Skills</h3>
-            </div>
-            <div class="column large-9 tab-12">
-                <div class="resume-block">
-
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore 
-                    vero quidem nobis maxime dolorem aliquam quisquam eum ipsum amet. Vitae 
-                    aut atque fuga dolorem. Vel voluptatibus fugiat nam. Impedit aperiam 
-                    nesciunt facilis! Porro architecto dicta inventore tempora ratione quia odio.
-                    </p>
-
-                    <ul class="skill-bars-fat">
-                        <li>
-                        <div class="progress percent85"></div>
-                        <strong>HTML</strong>
+                    <ul>
+                        <li>Servicedesk Engineer
+                            <ul>
+                                <li>Remote oplossen van computerproblemen bij gebruikers</li>
+                                <li>Opmaken van IT-Service tickets in snow, Jira, Top desk, ed.…</li>
+                                <li>Telefonisch en per mail gebruikers bij staan.</li>
+                                <li>Leveranciers aanspreken voor gebruiker problemen op te lossen</li>
+                            </ul>
                         </li>
-                        <li>
-                        <div class="progress percent85"></div>
-                        <strong>CSS</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent65"></div>
-                        <strong>Javascript</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent90"></div>
-                        <strong>Figma</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent75"></div>
-                        <strong>Illustrator</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent60"></div>
-                        <strong>Photoshop</strong>
+                        <li>On-site Service engineer                       
+                            <ul>
+                                <li>Hardware en softwareproblemen verhelpen on-site.</li>
+                                <li>Configuratie Cisco switches en routers.</li>
+                                <li>Netwerkproblemen verhelpen</li>
+                            </ul>
                         </li>
                     </ul>
-
                 </div> <!-- end resume-block -->
-
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">IT Consultant | Pauwels Consulting</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Support Engineer</span> 
+                            <span class="resume-block__header-date">
+                                Oktober 2017 - December 2018
+                            </span>
+                        </p>
+                    </div>
+                    <ul>
+                        <li>Computerzaal Operator in datacenter Vlaamse Overheid voor FDS/DXC/HP
+                            <ul>
+                                <li>Beheer van Back-up taperobots (tapechanges)</li>
+                                <li>In en Uitbouwen servers, Switchen, routers</li>
+                                <li>Aanmaken van Netwerk documentatie.</li>
+                                <li>Opvolgen van Netwerkproblemen</li>
+                                <li>Uitvoeren van Patchwerk</li>
+                            </ul>
+                        </li>
+                        <li>Mobile Service Engineer                       
+                            <ul>
+                                <li>2e & 3e lijnsupport aan verscheidene klanten van FDS/DXC/HP</li>
+                                <li>Aanmaken van Netwerk documentatie.</li>
+                                <li>Opvolgen van Netwerkproblemen en problemen van users</li>
+                            </ul>
+                        </li>
+                        <li>HP Datacenter Operator voor: FDS/DXC/HP                       
+                            <ul>
+                                <li>Beheer van back-up taperobots (tapechanges)</li>
+                                <li>In en Uitbouwen servers, Switchen, routers</li>
+                                <li>Aanmaken van Netwerk documentatie.</li>
+                                <li>Opvolgen van Netwerkproblemen</li>
+                                <li>Uitvoeren van Patchwerk</li>
+                            </ul>
+                        </li>     
+                    </ul>
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Engineer | Aturis (Bibliotheca)</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Technisch Engineer</span> 
+                            <span class="resume-block__header-date">
+                                December 2016 - Oktober 2017
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                    <ul>
+                        <li>Installatie en Herstelling van bibliotheek automatisatie 
+                            <br>apparatuur Nazicht netwerken binnen bibliotheken</li>
+                        <li>Nazicht RFID-apparatuur</li>
+                        <li>Opleiding van Bibliotheek personeel over apparatuur tijdens 
+                            <br>opstartfase en opvolging hiervan tijdens de eerste week.</li>
+                        <li>Franstalige helpdesk voor Franstalige bibliotheken</li>                            
+                    </ul>
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Engineer | Haeck.be (Wolf Security)</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Security Engineer</span> 
+                            <span class="resume-block__header-date">
+                                April 2016 - September 2016
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                    <ul>
+                        <li>Installatie, Onderhoud en herstelling Alarmen Nazicht Netwerken op vraag klant</li>
+                        <li>Installatie, Onderhoud en herstelling CCTV-installaties</li>
+                    </ul>
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Engineer | Cervo Engineering</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Telecom Engineer</span> 
+                            <span class="resume-block__header-date">
+                                Juli 2010 - November 2014
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                    <ul>
+                        <li>Installatie Belgacom TV, Internet, Telefonie</li>
+                        <li>Zowel bij residentiële klanten als business klanten</li>
+                        <li>Herstellingen op Belgacom TV, Internet, Telefonie zowel bij residentiële als b2b klanten</li>
+                        <li>Opleiding geven aan nieuwe collega techniekers</li>
+                    </ul>
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h5">Verscheidene korte interim werken o.a. bij Molecule, Lesage, Grand Deco in de periode 2002 – 30/06/2010</h4>
+                    </div>
+                </div> <!-- end resume-block -->
+                                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Radio Operator | Belgisch Leger</h4>
+                        <p class="resume-block__header-meta">
+                            <span>1e Soldaat</span> 
+                            <span class="resume-block__header-date">
+                                Juli 2000 - Juli 2002
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                    <ul>
+                        <li>Opstellen van een HZB-station met antenne Type 1, B, C</li>
+                        <li>Hiermee het maken van een verbinding tussen 2 punten bv Tussen 2 Hoofkwartieren</li>
+                    </ul>
+                    </p>
+                </div> <!-- end resume-block -->
             </div>
         </div> <!-- s-resume__section -->
 
+
+        <div class="row s-resume__section">
+    <div class="column large-3 tab-12">
+        <h3 class="section-header-allcaps">Education</h3>
+    </div>
+
+    <div class="column large-9 tab-12">
+
+        <!-- 🎓 Classroom Education -->
+        <h2 class="resume-subtitle">Classroom</h2>
+        <div class="resume-block"> <!-- s-Training__section -->
+            <div class="resume-block__header">
+                <h4 class="h3">SBM @ Centric</h4>
+                <p class="resume-block__header-meta">
+                    <span>ITIL v4 Foundation</span> 
+                    <span class="resume-block__header-date">2019</span>
+                </p>
+            </div>
+            <ul>
+                    <li>3-Daagse Opleiding ITILv4 Foundation met certificatie
+                        <ul>
+                            <li>Certificatie behaald op 18/10/2019</li>
+                        </ul>
+                    </li>
+                </ul>
+        </div><!-- s-Training__section -->
+        <div class="resume-block"> <!-- s-Training__section -->
+            <div class="resume-block__header">
+                <h4 class="h3">INTEC Brussel</h4>
+                <p class="resume-block__header-meta">
+                    <span>Systeembeheerder</span> 
+                    <span class="resume-block__header-date">2015 - 2016</span>
+                </p>
+            </div>
+            <p>
+                <ul>
+                    <li>Installatie en Configuratie Cisco Switchen en Routers
+                        <ul>
+                            <li>IP-configuratie en Subnetting, routing tabellen, ed...</li>
+                        </ul>
+                    </li>
+                    <li>Installatie en configuratie van MS Windows Server 2012R2, Hyper – V
+                        <ul>
+                            <li>Aanmaken van domainen</li>
+                            <li>Instellen van Trusts, Fileshares</li>
+                            <li>Configureren van Sites</li>
+                            <li>Opzetten van Exchange 2013</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div> <!-- s-Training__section -->
+        <div class="resume-block"> <!-- s-Training__section -->
+            <div class="resume-block__header">
+                <h4 class="h3">Syntra West</h4>
+                <p class="resume-block__header-meta">
+                    <span>Netwerkbeheerder (Systeembeheerder)</span> 
+                    <span class="resume-block__header-date">2010 - 2012</span>
+                    <br><span class="h6">Eindwerken: Fail-Over Exchange 2010 & Apache – MySQL</span>
+                </p>
+            </div>
+            <p>
+                <ul>
+                    <li>Installatie en configuratie van MS Windows Server 2008R2
+                        <ul>
+                            <li>Aanmaken van domainen</li>
+                            <li>Instellen van Trusts, Fileshares</li>
+                            <li>Configureren van Sites</li>
+                            <li>Opzetten van Exchange 2010</li>
+                        </ul>
+                    </li>
+                    <li>Installatie en configuratie van Linux Systemen
+                        <ul>
+                            <li>Fedora, Ubuntu, Centos, Mint</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div> <!-- s-Training__section -->
+        <div class="resume-block"> <!-- s-Training__section -->
+            <div class="resume-block__header">
+                <h4 class="h3">Syntra West</h4>
+                <p class="resume-block__header-meta">
+                    <span>PC Technicus</span> 
+                    <span class="resume-block__header-date">2005 - 2007</span>
+                    <br><span class="h6">Eindwerken: Virtualisatie (Theoretisch werk) & Multiboot Install DVD</span>
+                </p>
+            </div>
+            <p>
+                <ul>
+                    <li>Vakken
+                        <ul>
+                            <li>Bestandsorganisatie, Programmatie Logica (Basis Programmeren met Borland Pascal)</li>
+                            <li>Operating systems Windows XP, 7, 2003 Server, Linux (Ubuntu, Fedora)</li>
+                            <li>Basis Netwerken</li>
+                            <li>Basis Bash script</li>
+                            <li>Hardware Repair</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div> <!-- s-Training__section -->
+        <div class="resume-block"> <!-- s-Training__section -->
+            <div class="resume-block__header">
+                <h4 class="h3">VDAB Brugge</h4>
+                <p class="resume-block__header-meta">
+                    <span>PLC Programmatie</span> 
+                    <span class="resume-block__header-date">2005 - 2007</span>
+                 </p>
+            </div>
+            <p>
+                <ul>
+                    <li>Vakken
+                        <ul>
+                            <li>Siemens Step 5 & Step7</li>
+                            <li>Visualisatie pakket Scada ISM Siemens S7/200</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div> <!-- s-Training__section -->
+        <!-- 💻 Online Education -->
+        <h2 class="resume-subtitle">Online</h2>
+
+        <div class="resume-block">
+            <div class="resume-block__header">
+                <h4 class="h3">Udemy / Coursera</h4>
+                <p class="resume-block__header-meta">
+                    <span>Networking & Cloud Courses</span> 
+                    <span class="resume-block__header-date">2023 - Present</span>
+                </p>
+            </div>
+
+            <p>...</p>
+        </div>
+    </div>
+</div>
+        
+
+        <div class="row s-resume__section">
+    <div class="column large-3 tab-12">
+        <h3 class="section-header-allcaps">Skills</h3>
+    </div>
+
+    <div class="column large-9 tab-12">
+
+
+
+ <div class="skills-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="skills-column">
+
+        <!-- CORE SUPPORT & SYSTEMS -->
+        <div class="skill-category">
+            <h4>Core Support & Systems</h4>
+
+            <div class="skill-item">
+                <span class="skill-title">Troubleshooting & Support (L1/L2, End-User & Infrastructure)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="90"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Windows Client (XP → 11)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="90"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Windows Server Administration</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Active Directory (Users, GPO, Permissions)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Virtualization (Hyper-V)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="70"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- NETWORKING -->
+        <div class="skill-category">
+            <h4>Networking</h4>
+
+            <div class="skill-item">
+                <span class="skill-title">TCP/IP, DNS, DHCP Troubleshooting</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Switching, VLANs & Network Basics</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="70"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+    <div class="skills-column">
+
+        <!-- CLOUD & MODERN WORKPLACE -->
+        <div class="skill-category">
+            <h4>Cloud & Modern Workplace</h4>
+
+            <div class="skill-item">
+                <span class="skill-title">Microsoft 365 Administration</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="85"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Endpoint Management (Intune)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="75"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Microsoft Azure Fundamentals (AZ-900)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="75"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MONITORING & DATA -->
+        <div class="skill-category">
+            <h4>Monitoring & Data</h4>
+
+            <div class="skill-item">
+                <span class="skill-title">Infrastructure Monitoring (Zabbix)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="65"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Database Basics (MySQL)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="60"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- AUTOMATION & SCRIPTING -->
+        <div class="skill-category">
+            <h4>Automation & Scripting</h4>
+
+            <div class="skill-item">
+                <span class="skill-title">PowerShell (Automation & Administration)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="70"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">JavaScript (Basic Development)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="65"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Linux Administration (Basic)</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="65"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>       
+
+    </div>
+</div>
     </section> <!-- end s-resume -->
 
 
@@ -316,338 +701,66 @@
     ================================================== -->
     <section id="portfolio" class="s-portfolio target-section">
 
-        <div class="row s-portfolio__header">
-            <div class="column large-12">
-                <h3>A Few Of My Latest Creations</h3>
-            </div>
+    <div class="row s-portfolio__header">
+        <div class="column large-12">
+            <h3>Projects</h3>
+            <p>Praktische projecten die mijn groei tonen van Support Engineer naar System / Network / Cloud Engineer.</p>
         </div>
+    </div>
 
-        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+    <div class="row">
 
-            <div class="column folio-item">
-                <a href="#modal-01" class="folio-item__thumb">
-                    <img src="images/portfolio/droplet.jpg" 
-                         srcset="images/portfolio/droplet.jpg 1x, 
-                                 images/portfolio/droplet@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
+        <!-- Project 1 -->
+        <div class="column large-6 tab-12">
+            
+            <div class="card">
 
-            <div class="column folio-item">
-                <a href="#modal-02" class="folio-item__thumb">
-                    <img src="images/portfolio/lamp.jpg" 
-                         srcset="images/portfolio/lamp.jpg 1x, 
-                                 images/portfolio/lamp@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
+                <h4>Personal Portfolio Website</h4>
 
-            <div class="column folio-item">
-                <a href="#modal-03" class="folio-item__thumb">
-                    <img src="images/portfolio/minimalismo.jpg" 
-                         srcset="images/portfolio/minimalismo.jpg 1x, 
-                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item">
-                <a href="#modal-04" class="folio-item__thumb">
-                    <img src="images/portfolio/shutterbug.jpg" 
-                         srcset="images/portfolio/shutterbug.jpg 1x, 
-                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item">
-                <a href="#modal-05" class="folio-item__thumb">
-                    <img src="images/portfolio/fuji.jpg" 
-                         srcset="images/portfolio/fuji.jpg 1x, 
-                                 images/portfolio/fuji@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item">
-                <a href="#modal-06" class="folio-item__thumb">
-                    <img src="images/portfolio/skaterboy.jpg" 
-                         srcset="images/portfolio/skaterboy.jpg 1x, 
-                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item">
-                <a href="#modal-07" class="folio-item__thumb">
-                    <img src="images/portfolio/rucksack.jpg" 
-                         srcset="images/portfolio/rucksack.jpg 1x, 
-                                 images/portfolio/rucksack@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-            <div class="column folio-item">
-                <a href="#modal-08" class="folio-item__thumb">
-                    <img src="images/portfolio/sanddunes.jpg" 
-                         srcset="images/portfolio/sanddunes.jpg 1x, 
-                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
-
-        </div> <!-- end folio-list -->
-
-
-        <!-- Modal Templates Popup
-        =========================================================== -->
-        <div id="modal-01" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Droplet</h5>
-                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                        <li>Product Design</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-02" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-03" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Minimalismo</h5>
-                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Product Design</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-04" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Shutterbug</h5>
-                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
-                    <ul class="modal-popup__cat">
-                        <li>E-Commerce</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-05" hidden>
-            <div class="modal-popup">
-
-                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Fuji</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Product Design</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-06" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Skaterboy</h5>
-                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                        <li>Product Design</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-07" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Rucksack</h5>
-                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Branding</li>
-                        <li>Product Design</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-        <div id="modal-08" hidden>
-            <div class="modal-popup">
-                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5>Sand Dunes</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup__cat">
-                        <li>Web Design</li>
-                    </ul>
-                </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
-            </div>
-        </div> <!-- end modal -->
-
-
-    </section> <!-- end s-portfolio -->
-
-
-    <!-- CTA
-    ================================================== -->
-    <section class="s-cta">
-
-        <div class="row">
-            <div class="column">
-                <h3 class="h2 section-desc">
-                    Need a great reliable web hosting?
-                </h3>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row cta-content">
-            <div class="column">
                 <p>
-                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
-                Powerful web and Wordpress hosting. Guaranteed.
-                Starting at $2.95 per month.
+                    Deze website werd volledig zelf opgebouwd op basis van de Ceevee template en aangepast
+                    naar een moderne, recruiter-vriendelijke IT portfolio.
                 </p>
 
-                <a href="https://www.dreamhost.com/r.cgi?287326" class="btn btn--primary h-full-width">Get Started</a>
-            </div>
-        </div> <!-- end cta-content -->
+                <ul>
+                    <li>HTML, CSS en JavaScript</li>
+                    <li>Responsive design (mobile-first)</li>
+                    <li>Ceevee template customization</li>
+                    <li>Accordion experience sectie</li>
+                    <li>Werkend contactformulier (Formspree)</li>
+                </ul>
 
-    </section> <!-- end s-cta -->
+                <p><strong>Technologieën:</strong> HTML, CSS, JavaScript, Formspree</p>
 
-
-    <!-- testimonials
-    ================================================== -->
-    <section id="testimonials" class="s-testimonials target-section">
-
-        <div class="s-testimonials__bg"></div>
-
-        <div class="row s-testimonials__header">
-            <div class="column large-12">
-                <h3>Hear What My Clients Says</h3>
+                <p><strong>Doel:</strong> professionele online aanwezigheid en showcase van mijn IT skills</p>
+                <a href="Projects/Prject-Website/index.html" class="btn btn--primary full-width"> View Project </a>
             </div>
         </div>
 
-        <div class="row s-testimonials__content">
+        <!-- Project 2 (placeholder future) -->
+        <div class="column large-6 tab-12">
+            <div class="card">
 
-            <div class="column">
+                <h4>IT Lab Projects (Coming Soon)</h4>
 
-                <div class="swiper-container testimonial-slider">
+                <p>
+                    Momenteel bezig met het opzetten van praktische labs om mijn kennis verder uit te breiden.
+                </p>
 
-                    <div class="swiper-wrapper">
+                <ul>
+                    <li>Azure (AZ-900 fundamentals)</li>
+                    <li>Cisco networking labs (VLANs, routing)</li>
+                    <li>Monitoring met Zabbix</li>
+                </ul>
 
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Tim Cook</strong>
-                                    <span>CEO, Apple</span>
-                                </cite>
-                            </div>
-                            <p>
-                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
-                            Laudantium quia consequatur molestias delectus culpa.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-        
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Sundar Pichai</strong>
-                                    <span>CEO, Google</span>
-                                </cite>
-                            </div>
-                            <p>
-                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                            Quasi voluptas eius distinctio. Atque eos maxime.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-        
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Satya Nadella</strong>
-                                    <span>CEO, Microsoft</span>
-                                </cite>
-                            </div>
-                            <p>
-                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                            Voluptatem dignissimos ut.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
+                <p><strong>Status:</strong> In ontwikkeling</p>
+                <a class="btn full-width" style="opacity:0.5; pointer-events:none;"> Coming Soon </a>
+            </div>
+        </div>
 
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Jeff Bezos</strong>
-                                    <span>CEO, Amazon</span>
-                                </cite>
-                            </div>
-                            <p>
-                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
-                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
-                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-    
-                    </div> <!-- end testimonial slider swiper-wrapper -->
+    </div>
 
-                    <div class="swiper-pagination"></div>
-
-                </div> <!-- end swiper-container -->
-
-            </div> <!-- end column -->
-
-        </div> <!-- end row -->
-
-    </section> <!-- end s-testimonials -->
-
+</section>
 
     <!-- contact
     ================================================== -->
@@ -664,8 +777,9 @@
             <div class="column large-7 medium-12">
 
                 <h4 class="huge-text">
-                Have a new project in mind? Let's collaborate and build something awesome. 
-                Let's turn that idea to an even greater product :)
+                Zoek je iemand die complexe issues helder oplost en systemen betrouwbaar laat draaien?
+                Met jaren ervaring in support, troubleshooting en infrastructuur sta ik klaar voor een nieuwe functie waarin ik mijn expertise kan inzetten.<br><br>
+                Neem gerust contact op — Ik denk graag mee over hoe ik waarde kan toevoegen aan jouw team.
                 </h4>
 
             </div>
@@ -675,12 +789,14 @@
                 <div class="row contact-infos">
                     <div class="column large-12 medium-6 tab-12">
                         <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Email
-                            </h5>
-                            <p class="contact-block__content">
-                                <a class="mailtoui" href="mailto:sayhello@ceevee.com">sayhello@ceevee.com</a>
+                            <h5 class="contact-block__header"> Email</h5>
+                            <!--<p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:frank.vandevannet@gmail.com">frank.vandevannet@gmail.com</a>
                             </p>
+                            <p class="contact-email"><i class="icon-mail"></i> frank.vandevannet@gmail.com
+                            </p>-->
+                            <a class="email-badge" href="mailto:frank.vandevannet@gmail.com">frank.vandevannet@gmail.com</a>
+
                         </div> <!-- end contact-block -->
                     </div>
                     <div class="column large-12 medium-6 tab-12">
@@ -689,13 +805,36 @@
                                 Phone
                             </h5>
                             <p class="contact-block__content">
-                                <a href="tel:+1975432345">+197 543 2345</a>
+                                <a class="email-badge" href="tel:+32475845915">+32 475 84 59 15</a>
                             </p>
                         </div> <!-- end contact-block -->
                     </div>
-
+                    
+                    
                     <div class="column large-12">
-                        <a href="mailto:sayhello@ceevee.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+                            <input type="hidden" name="form-name" value="contact">
+                            <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+
+                            <p>
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" required>
+                            </p>
+
+                            <p>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" required>
+                            </p>
+
+                            <p>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </p>
+
+                            <p>
+                                <button type="submit" class="btn btn--primary">Send Message</button>
+                            </p>
+                        </form>
                     </div>
                 </div> <!-- end contact-infos -->
 
@@ -711,17 +850,15 @@
         <div class="row">
             <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
                 <ul class="s-footer__social">
-                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                   
+                    <li><a href="https://github.com/frankvandevannetlabs"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/frankvvf/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
             <div class="column large-7 medium-6 w-1000-stack ss-copyright">
-                <span>© Copyright Ceevee 2021</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                <!-- <span>© Copyright Ceevee 2021</span> -->
+                <span>Design by    <a href="https://github.com/frankvandevannetlabs">    Frank Vande Vannet</a></span>
             </div>
         </div>
 
@@ -737,6 +874,8 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/QRScript.js"></script>
+    <script src="js/skillbar.js" defer></script>
 
 </body>
 

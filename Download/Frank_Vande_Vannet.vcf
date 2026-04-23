@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Frank Vande Vannet
+N:Vande Vannet;Frank;;;
+TEL;TYPE=CELL:+32475845915
+EMAIL;TYPE=INTERNET,HOME:frank.vandevannet@gmail.com
+EMAIL;TYPE=INTERNET,WORK:frank.vandevannet@outlook.com
+ADR;TYPE=HOME:;;Oudenaardestraat 39;Vichte;;8570;Belgium
+URL:https://yourwebsite.com
+END:VCARD
