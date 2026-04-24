@@ -4070,8 +4070,9 @@ button.btn--pill {
     gap: 3rem;
     align-items: center;
     margin-top: 3rem;
-    background: var(--color-gray-17);
-    border: 1px solid var(--color-border);
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
     padding: 1.5rem;
     border-radius: 12px;
 }
