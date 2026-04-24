@@ -4066,8 +4066,8 @@ button.btn--pill {
 
 .about-contact {
     display: grid;
-    grid-template-columns: 200px 1fr auto;
-    gap: 3rem;
+    grid-template-columns: minmax(160px, 200px) 1fr auto;
+    gap: 2.5rem;
     align-items: center;
     margin-top: 3rem;
     background: rgba(255,255,255,0.02);
