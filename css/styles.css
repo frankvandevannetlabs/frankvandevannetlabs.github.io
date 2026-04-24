@@ -4120,8 +4120,8 @@ button.btn--pill {
     gap: 1rem;
 }
 
-.about-contact__actions .btn {
-    width: 100%;
+ .about-contact__actions .btn {
+    width: calc(100% - 1cm);
     text-align: center;
 }
 
