@@ -2773,6 +2773,18 @@ button.btn--pill {
     margin-bottom: 2rem;
 }
 
+/* toelichting met dezelfde typografie als .resume-block__header-meta (bv. "ICT Systeembeheerder") */
+.resume-note--meta {
+    font-family: var(--font-2);
+    font-size: calc(var(--text-size) * 1.1111);
+    font-style: italic;
+}
+
+.resume-note--meta strong {
+    font-family: inherit;
+    color: inherit;
+}
+
 /* label boven een projectkaart */
 .project-label {
     display: inline-block;
