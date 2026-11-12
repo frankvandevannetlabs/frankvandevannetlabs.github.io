@@ -4035,6 +4035,11 @@ button.btn--pill {
     color: white;
 }
 
+/* labels in de About-tekst (bv. "Wat ik zoek:") leesbaar op donkere achtergrond, zelfde kleur als de About-koppen */
+.s-about__content p strong {
+    color: white;
+}
+
 .s-about__pic {
     width: var(--vspace-5);
     height: var(--vspace-5);
