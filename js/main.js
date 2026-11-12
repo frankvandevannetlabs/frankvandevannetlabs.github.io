@@ -155,10 +155,14 @@
                 * sectionId variable we are getting while looping through sections as 
                 * an selector
                 */
+                // Secties zonder menulink (bv. #portfolio) overslaan om een null-fout te vermijden
+                const navLink = document.querySelector(".s-header__nav a[href*=" + sectionId + "]");
+                if (!navLink) return;
+
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    document.querySelector(".s-header__nav a[href*=" + sectionId + "]").parentNode.classList.add("current");
+                    navLink.parentNode.classList.add("current");
                 } else {
-                    document.querySelector(".s-header__nav a[href*=" + sectionId + "]").parentNode.classList.remove("current");
+                    navLink.parentNode.classList.remove("current");
                 }
             });
         }

@@ -2760,6 +2760,42 @@ button.btn--pill {
     margin-bottom: 0.4rem;
 }
 
+/* tools-regel onder een skillcategorie (zonder balk) */
+.skill-tools {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* korte toelichting onder een resume-subtitel */
+.resume-note {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+/* toelichting met dezelfde typografie als .resume-block__header-meta (bv. "ICT Systeembeheerder") */
+.resume-note--meta {
+    font-family: var(--font-2);
+    font-size: calc(var(--text-size) * 1.1111);
+    font-style: italic;
+}
+
+.resume-note--meta strong {
+    font-family: inherit;
+    color: inherit;
+}
+
+/* label boven een projectkaart */
+.project-label {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #B34C21;
+    margin-bottom: 0.8rem;
+}
+
 /* bar */
 .skill-bar {
     width: 100%;
@@ -4008,6 +4044,11 @@ button.btn--pill {
 
 .s-about h3 {
     margin-top: 0;
+    color: white;
+}
+
+/* labels in de About-tekst (bv. "Wat ik zoek:") leesbaar op donkere achtergrond, zelfde kleur als de About-koppen */
+.s-about__content p strong {
     color: white;
 }
 

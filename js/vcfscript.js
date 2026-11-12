@@ -11,7 +11,7 @@ FN:Frank Vande Vannet
 TEL;TYPE=cell:+32475845915
 EMAIL:frank.vandevannet@gmail.com
 ADR;TYPE=home,work:;;Oudenaardestraat 39;Vichte (Anzegem);Belgie;8570;
-URL:https://www.yourwebsite.com
+URL:https://main-website-frank.netlify.app/
 END:VCARD`;
 
     const blob = new Blob([vCardData], { type: 'text/vcard' });
