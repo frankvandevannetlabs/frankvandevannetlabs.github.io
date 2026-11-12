@@ -2760,6 +2760,30 @@ button.btn--pill {
     margin-bottom: 0.4rem;
 }
 
+/* tools-regel onder een skillcategorie (zonder balk) */
+.skill-tools {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* korte toelichting onder een resume-subtitel */
+.resume-note {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+/* label boven een projectkaart */
+.project-label {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #B34C21;
+    margin-bottom: 0.8rem;
+}
+
 /* bar */
 .skill-bar {
     width: 100%;
